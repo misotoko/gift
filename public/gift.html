@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Choose Your Gift</title>
+  <link rel="stylesheet" href="src/css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet" />
+</head>
+
+<body class="gift-selection">
+  <div class="gift-frame" id="gift-frame">
+    <div class="gift-content-box">
+      <a href="index.html" id="back-to-home-btn" class="gift-choice-button">← Back</a>
+
+      <!-- Default choice view -->
+      <div class="gift-content-inner" id="choice-view">
+        <div class="choose-one-title">Choose one!</div>
+        <div class="gift-icon-row">
+          <img src="assets/coin.png" class="gift-icon" alt="Coin" id="coin-icon">
+          <img src="assets/star.png" class="gift-icon" alt="Star" id="star-icon">
+          <img src="assets/question.png" class="gift-icon" alt="Question Mark" id="question-icon">
+        </div>
+      </div>
+
+      <!-- Coin selected view -->
+      <div class="coin-content" id="coin-view" style="display:none; flex-direction: column; align-items: center; justify-content: center; height: 100%; padding: 20px; box-sizing: border-box;">
+        <div class="coin-title">One snack for a snack :)</div>
+        <img src="assets/almonds.png" alt="Almonds" class="almonds-image" />
+        <div class="almonds-text">some almonds for you and dark choco</div>
+        <div class="chocolate-container"></div>
+        <button class="back-to-choices button back-button" id="back-button-coin">Back to choices</button>
+      </div>
+
+      <!-- Star selected view -->
+      <div id="star-view" style="display:none; flex-direction: column; align-items: center; justify-content: center; height: 100%; padding: 20px; box-sizing: border-box;">
+        <h1 class="star-title">Pew! Pew!</h1>
+        <img src="assets/ray01.png" alt="Robot Ray" class="robot-ray-img" />
+        <p class="star-subtext">I choose YOU to be HAPPY!</p>
+        <button class="back-to-choices button back-button" id="back-button-star">Back to choices</button>
+      </div>
+
+      <!-- Question Mark -->
+      <div id="question-view" style="display:none; flex-direction: column; align-items: center; justify-content: center; height: 100%; padding: 20px; box-sizing: border-box;">
+        <h1 class="question-title">happi happi birth!</h1>
+        <img src="assets/taco.png" alt="Taco" class="taco-img" />
+        <div class="question-subtext">
+          <p>Taco bout how amazing you are!</p>
+          <span class="subtle-note">but not taco bamba...</span>
+        </div>
+        <img src="assets/cat.png" alt="Taco Cat" class="taco-cat" />
+        <div class="balloon-container"></div>
+        <button class="back-to-choices button back-button" id="back-button-question">Back to choices</button>
+      </div>
+
+      <!-- YouTube Player -->
+      <div id="yt-player-container" style="display: none; margin-top: 20px; text-align: center;">
+        <div id="yt-player"></div>
+      </div>
+
+        <!-- Song container -->
+  <div id="song-view" style="display:none;">
+<button id="play-song-btn" class="play-song-btn">▶️ Play Song</button>
+    <div id="youtube-player-container" style="margin-top: 20px;"></div>
+  </div>
+
+    </div>
+  </div>
+  <script src="https://www.youtube.com/iframe_api"></script>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
