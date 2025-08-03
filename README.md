@@ -29,8 +29,10 @@ If you just want to run the project locally without npm:
    cd gift
 2. **(Optional but recommended) Start a simple local server:**
    
-   Using Python 3:
+   Using Python or Python 3:
    ```bash
+   python -m http.server 8080
+   or
    python3 -m http.server 8080
    
    Open your browser and go to:
